@@ -1,7 +1,10 @@
-echo "# Gowtham07x" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Gowtham07x/Gowtham07x.git
-git push -u origin main
+def fact_rec(n):
+  if n==0 or n==1:
+    return 1
+  else:
+    return n*fact_rec(n-1)
+    
+number=int(input("Enter a value :"))
+res = fact_rec(number)
+
+print("The factorial of {} is {}.".format(number,res))
